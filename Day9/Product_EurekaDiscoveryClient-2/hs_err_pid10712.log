@@ -1,0 +1,37 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffa3f8826a7, pid=10712, tid=3708
+#
+# JRE version: Java(TM) SE Runtime Environment 18.9 (11.0.13+10) (build 11.0.13+10-LTS-370)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM 18.9 (11.0.13+10-LTS-370, mixed mode, tiered, compressed oops, g1 gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x3626a7]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=63470 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=localhost -Dspring.jmx.enabled=true -Dspring.application.admin.enabled=true -XX:TieredStopAtLevel=1 -Dspring.boot.project.name=EurekaDiscoveryClient-2 -Dfile.encoding=UTF-8 com.demo.EurekaDiscoveryClient2Application --spring.output.ansi.enabled=always
+
+Host: Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz, 2 cores, 7G,  Windows 10 , 64 bit Build 19041 (10.0.19041.1706)
+Time: Thu May 26 07:28:17 2022 Coordinated Universal Time elapsed time: 2.111257 seconds (0d 0h 0m 2s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000017c8245d800):  JavaThread "RMI Scheduler(0)" daemon [_thread_in_vm, id=3708, stack(0x0000001150c00000,0x0000001150d00000)]
+
+Stack: [0x0000001150c00000,0x0000001150d00000],  sp=0x0000001150cfce40,  free space=1011k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x3626a7]
+V  [jvm.dll+0x628632]
+V  [jvm.dll+0x36240e]
+V  [jvm.dll+0x34ba2c]
+V  [jvm.dll+0x34b4c8]
+V  [jvm.dll+0x51fd42]
+V  [jvm.dll+0x51edc4]
+V  [jvm.dll+0x35e328]
